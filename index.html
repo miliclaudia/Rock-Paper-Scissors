@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Concert+One&display=swap" rel="stylesheet">
+  <title>Document</title>
+</head>
+
+<body>
+  <div class="card">
+    <div class="winner">
+      <p id="game-results"></p>
+      <button class="button-74" id="reset-btn"><img src="/images/refresh.png"></button>
+    </div>
+
+    <div class="picks">
+      <div class="human-picks">
+        <img class="img" id="human-paper" src="/images/paper.png">
+        <img class="img" id="human-rock" src="/images/rock.png">
+        <img class="img" id="human-scissors" src="/images/scissors.png">
+      </div>
+
+      <div class="computer-picks">
+        <img class="img" id="computer-paper" src="/images/paper.png">
+        <img class="img" id="computer-rock" src="/images/rock.png">
+        <img class="img" id="computer-scissors" src="/images/scissors.png">
+      </div>
+    </div>
+
+    <div class="start-form">
+      <h1>ROCK PAPPER SCISSORS</h1>
+      <p>How many rounds would you like to play?</p>
+      <div>
+        <input type="number" id="numInput" min=0 max= 50 maxlength=2>
+        <button class="button-74" id="start-btn" role="button">START</button>
+      </div>
+    </div>
+
+    <div class="score">
+      <h1>SCORE</h1>
+      <div class="points">
+        <span id="human">0</span>
+        <span id="computer">0</span>
+      </div>
+    </div>
+
+    <div class="buttons">
+      <button class="btn" id="paper-bt"><img class="img" src="/images/paper.png"></button>
+      <button class="btn" id="rock-bt"><img class="img" src="/images/rock.png"></button>
+      <button class="btn" id="scissors-bt"><img class="img" src="/images/scissors.png"></button>
+    </div>
+  </div>
+
+</body>
+<script src="javascript.js"></script>
+</html>
